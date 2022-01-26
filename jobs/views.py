@@ -5,6 +5,7 @@ from rest_framework.generics import (
     DestroyAPIView
 )
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from.permissions import isOwnerOrReadyOnly
 
 from .models import Job, Application
 from .serializers import JobSerializer, ApplicationSerializer
@@ -35,5 +36,5 @@ class ApplicationDetailView(DestroyAPIView):
 
     queryset = Application.objects.all()
     serializer_class = ApplicationSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (isOwnerOrReadyOnly, )
     

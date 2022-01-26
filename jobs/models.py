@@ -23,6 +23,11 @@ class Application(models.Model):
     related_name='applications',
     on_delete=models.DO_NOTHING
   )
+  owner = models.ForeignKey(
+    'jwt_auth.User',
+    related_name='applications_posted',
+    on_delete=models.CASCADE
+  )
 
   def __str__(self):
     return f'Application {self.id} on Job {self.job}'
