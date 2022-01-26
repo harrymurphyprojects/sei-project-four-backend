@@ -1,0 +1,30 @@
+[
+{
+  "model": "jobs.job",
+  "pk": 1,
+  "fields": {
+    "position": "Software Engineer",
+    "company": "Money Corp",
+    "company_image": "",
+    "location": "Londinium",
+    "salary": 100000,
+    "reference_number": 232323,
+    "description": "Turn things on and off, use stackoverflow, drink coffee, go on reddit.",
+    "date_posted": "2022-01-25"
+  }
+},
+{
+  "model": "jobs.job",
+  "pk": 2,
+  "fields": {
+    "position": "Full Stack Engineer",
+    "company": "BetaThanMeta",
+    "company_image": "",
+    "location": "Luton",
+    "salary": 10,
+    "reference_number": 282811,
+    "description": "Coffee drinking, bit of code",
+    "date_posted": "2022-01-12"
+  }
+}
+]
