@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {}
 if ENV != 'DEV':
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)	
+    DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 else:
     DATABASES['default'] =  {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
